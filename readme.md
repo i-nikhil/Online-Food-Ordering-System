@@ -1,4 +1,4 @@
-# 👨🏻‍💻 Food Ordering System - Interview Machine Coding Round
+# 👨🏻‍💻 Food Ordering System - Machine Coding Round
 
 ## ✅ SOLUTION using Node.js - List of commands:
 
