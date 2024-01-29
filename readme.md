@@ -12,10 +12,17 @@
 
 > onboard-resturant MacD 4 fries 40 coke 50 burger 60 happymeal 200 pasta 120
 ### To order from a resturant
-`order-food <resturant_name_without_space> <item1_from_menu> <no_of_items> <item2_from_menu> <no_of_items> ... <itemN_from_menu> <no_of_items>`
+`order-food <resturant_name> <item1_from_menu> <no_of_items> <item2_from_menu> <no_of_items> ... <itemN_from_menu> <no_of_items>`
 > order-food KFC wings 4 crushers 2 burger 1
 
 > order-food MacD burger 3 happymeal 1
+### To get all order history
+`get-order-history`
+### To get order history by resturant name
+`get-order-history <resturant_name>`
+> get-order-history KFC
+
+> get-order-history MacD
 ### To exit the project
 `exit`
 
