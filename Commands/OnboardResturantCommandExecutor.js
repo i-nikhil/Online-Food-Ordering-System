@@ -16,7 +16,7 @@ class OnboardResturantCommandExecutor extends CommandExecutor {
         }
         resturant.setMenu(menu)
         this.service.onboardNewResturant(resturant);
-        console.log(`Resturant ${resturant.name} onboarded with delivery capacity ${resturant.capacity}`);
+        console.log(`Resturant ${resturant.name} onboarded with delivery capacity ${resturant.capacity}\n`);
     }
 }
 

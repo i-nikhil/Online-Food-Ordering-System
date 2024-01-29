@@ -1,3 +1,4 @@
+const GetOrderHistoryCommandExecutor = require("./GetOrderHistoryCommandExecutor");
 const OnboardResturantCommandExecutor = require("./OnboardResturantCommandExecutor");
 const OrderFoodCommandExecutor = require("./OrderFoodCommandExecutor");
 
@@ -8,6 +9,7 @@ class CommandExecutorFactory
     {
         this.#commands.set(OnboardResturantCommandExecutor.commandName, new OnboardResturantCommandExecutor(resturantService))
         this.#commands.set(OrderFoodCommandExecutor.commandName, new OrderFoodCommandExecutor(resturantService))
+        this.#commands.set(GetOrderHistoryCommandExecutor.commandName, new GetOrderHistoryCommandExecutor(resturantService))
     }
     getCommandExecutor(command)
     {

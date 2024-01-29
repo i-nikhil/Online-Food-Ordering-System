@@ -18,7 +18,7 @@ class OrderFoodCommandExecutor extends CommandExecutor
             order.orders.set(command[i], command[i+1])
         }
         const bill = this.service.placeOrder(order);
-        console.log(`Congrats! Order placed from  ${order.resturantName}, bill payable: Rs.${bill}/-`);
+        console.log(`Congrats! Order placed from  ${order.resturantName}, bill payable: ₹ ${bill}/-\n`);
     }
 }
 

@@ -2,6 +2,7 @@ class Order
 {
     #resturantName
     orders
+    #bill
     constructor(name)
     {
         this.#resturantName = name
@@ -10,7 +11,15 @@ class Order
     get resturantName()
     {
         return this.#resturantName
-    }    
+    }
+    set bill(amount)
+    {
+        this.#bill = amount
+    }
+    get bill()
+    {
+        return this.#bill
+    }
 }
 
 module.exports = Order

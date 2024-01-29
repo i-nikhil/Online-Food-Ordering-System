@@ -44,6 +44,10 @@ class Resturant
     {
         this.#orderHistory.push(new History(order, new Date()))
     }
+    get orderHistory()
+    {
+        return this.#orderHistory
+    }
 }
 
 module.exports = Resturant
