@@ -3,17 +3,21 @@
 ## ✅ SOLUTION using Node.js - List of commands:
 
 ### To install node modules
-> npm install
+`npm install`
 ### To run the project
-> node app
+`node app`
 ### To onboard a restaurant / change existing resturant's menu
 `onboard-resturant <resturant_name> <delivering_capacity> <itemname1> <price1> <itemname2> <price2> ... <itemnameN> <priceN>`
-> onboard-resturant KFC 4 item1 200 item2 300
+> onboard-resturant KFC 4 wings 200 burger 150 crushers 70 icecream 70
+
+> onboard-resturant MacD 4 fries 40 coke 50 burger 60 happymeal 200 pasta 120
 ### To order from a resturant
 `order-food <resturant_name_without_space> <item1_from_menu> <no_of_items> <item2_from_menu> <no_of_items> ... <itemN_from_menu> <no_of_items>`
-> order-food kfc item1 1 item2 2
+> order-food KFC wings 4 crushers 2 burger 1
+
+> order-food MacD burger 3 happymeal 1
 ### To exit the project
-> exit
+`exit`
 
 ## ⁉️ PROBLEM STATEMENT:
 
