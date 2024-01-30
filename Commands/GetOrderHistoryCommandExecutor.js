@@ -18,7 +18,7 @@ class GetOrderHistoryCommandExecutor extends CommandExecutor {
 
         for (const h of orderHistories) {
             console.log(`\nResturant Name: ${h.order.resturantName}`);
-            console.log('Items: ',[...h.order.orders.entries()].map(([key, value]) => `${key} × ${value}`).join(', '));
+            console.log('Items: ', [...h.order.orders.entries()].map(([key, value]) => `${key} × ${value}`).join(', '));
             console.log(`Timestamp: ${h.datetime}`);
             console.log(`Bill Paid: ₹ ${h.order.bill}/-`)
         }

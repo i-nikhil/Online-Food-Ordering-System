@@ -1,17 +1,13 @@
-class CommandExecutor
-{
+class CommandExecutor {
     service
-    constructor(service)
-    {
+    constructor(service) {
         this.service = service
     }
-    validate(command)
-    {
+    validate(command) {
         console.log();
     }
 
-    execute(command)
-    {
+    execute(command) {
         console.log();
     }
 }

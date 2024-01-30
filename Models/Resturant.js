@@ -1,15 +1,13 @@
 const History = require("./History")
 
-class Resturant
-{
+class Resturant {
     #name
     #capacity
     orderInProcess
     #menu
     #orderHistory
 
-    constructor()
-    {
+    constructor() {
         this.#orderHistory = []
         this.orderInProcess = 0
     }
@@ -18,34 +16,27 @@ class Resturant
         this.#name = name
         return this
     }
-    get name()
-    {
+    get name() {
         return this.#name
     }
-    setCapacity(capacity)
-    {
+    setCapacity(capacity) {
         this.#capacity = capacity
         return this
     }
-    get capacity()
-    {
+    get capacity() {
         return this.#capacity
     }
-    setMenu(menu)
-    {
+    setMenu(menu) {
         this.#menu = menu
         return this
     }
-    get menu()
-    {
+    get menu() {
         return this.#menu
     }
-    saveOrderHistory(order)
-    {
+    saveOrderHistory(order) {
         this.#orderHistory.push(new History(order, new Date()))
     }
-    get orderHistory()
-    {
+    get orderHistory() {
         return this.#orderHistory
     }
 }

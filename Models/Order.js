@@ -1,23 +1,18 @@
-class Order
-{
+class Order {
     #resturantName
     orders
     #bill
-    constructor(name)
-    {
+    constructor(name) {
         this.#resturantName = name
         this.orders = new Map()
     }
-    get resturantName()
-    {
+    get resturantName() {
         return this.#resturantName
     }
-    set bill(amount)
-    {
+    set bill(amount) {
         this.#bill = amount
     }
-    get bill()
-    {
+    get bill() {
         return this.#bill
     }
 }

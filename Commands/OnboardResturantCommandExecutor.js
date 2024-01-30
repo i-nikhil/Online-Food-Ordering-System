@@ -12,7 +12,7 @@ class OnboardResturantCommandExecutor extends CommandExecutor {
         let resturant = new Resturant().setName(command[1]).setCapacity(command[2]);
         let menu = new Map();
         for (let i = 3; i < command.length - 1; i += 2) {
-            menu.set(command[i], command[i + 1])
+            menu.set(command[i], parseInt(command[i + 1]))
         }
         resturant.setMenu(menu)
         this.service.onboardNewResturant(resturant);

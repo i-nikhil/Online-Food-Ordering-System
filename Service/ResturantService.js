@@ -6,6 +6,14 @@ class ResturantService {
     onboardNewResturant(resturant) {
         this.#resturants.set(resturant.name, resturant)
     }
+    updateResturantMenu(updatedResturant) {
+        if (!this.#resturants.has(updatedResturant.name)) throw Error('Resturant not found')
+
+        let existingResturant = this.#resturants.get(updatedResturant.name)
+        existingResturant.setCapacity(updatedResturant.capacity).setMenu(updatedResturant.menu)
+
+        this.#resturants.set(updatedResturant.name, existingResturant)
+    }
     placeOrder(order) {
         let resturant = this.#resturants.get(order.resturantName)
 
@@ -33,9 +41,8 @@ class ResturantService {
     }
     getAllOrderHistory() {
         let history = []
-        for (let entry of this.#resturants) {
-            let [key] = entry;
-            history.push(...this.#resturants.get(key).orderHistory)
+        for (let [, restaurant] of this.#resturants) {
+            history.push(...restaurant.orderHistory);
         }
 
         if (history.length == 0)
@@ -48,12 +55,15 @@ class ResturantService {
 
         if (!resturant) throw Error('Resturant not found')
 
-        let orderHistory =  [...resturant.orderHistory]
+        let orderHistory = [...resturant.orderHistory]
 
         if (orderHistory.length == 0)
             throw Error(`No order history found`)
 
         return orderHistory
+    }
+    getAllResturants() {
+        return Array.from(this.#resturants.values())
     }
 }
 

@@ -9,14 +9,23 @@ const factory = new CommandExecutorFactory(resturantService);
 
 // let testcmd = [
 //     'onboard-resturant MacD 4 fries 40 coke 50 burger 60 happymeal 200',
-//     'onboard-resturant KFC 4 wings 200 burger 150 crushers 70 icecream 70',
+//     'onboard-resturant BurgerKing 4 fries 30 coke 45 burger 75',
+//     'onboard-resturant OlivesBurger 4 fries 25 coke 90 burger 70 happymeal 140',
+//     'onboard-resturant KFC 5 wings 200 burger 150 crushers 70 icecream 70',
+//     'show-menu',
 //     'order-food MacD burger 3 happymeal 1',
 //     'order-food KFC wings 4 crushers 2 burger 1',
 //     'order-food MacD coke 1',
 //     'order-food KFC icecream 1 crushers 1',
 //     'get-order-history KFC',
 //     'get-order-history MacD',
-//     'get-order-history'
+//     'update-resturant KFC 2 bucket 400 wings 200 burger 150 crushers 70',
+//     'get-order-history',
+//     'search burger',
+//     'search fries',
+//     'search bucket',
+//     'search maggie',
+//     'exit'
 // ]
 
 while (true) {
