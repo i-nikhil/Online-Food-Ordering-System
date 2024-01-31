@@ -6,11 +6,21 @@
 `npm install`
 ### To run the project
 `node app`
-### To onboard a restaurant / change existing resturant's menu
-`onboard-resturant <resturant_name> <delivering_capacity> <itemname1> <price1> <itemname2> <price2> ... <itemnameN> <priceN>`
+### To onboard a new restaurant
+`onboard-resturant <resturant_name> <delivering_capacity> <item_name1> <price1> <item_name2> <price2> ... <item_nameN> <priceN>`
 > onboard-resturant KFC 4 wings 200 burger 150 crushers 70 icecream 70
 
 > onboard-resturant MacD 4 fries 40 coke 50 burger 60 happymeal 200 pasta 120
+### To update onboarded resturant's menu and delivery capacity
+`update-resturant <resturant_name> <new_delivering_capacity> <new_item1> <price1> <new_item2> <price2> ... <new_itemN> <priceN>`
+> update-resturant KFC 5 bucket 500 wings 200 burger 150 crushers 70
+
+> update-resturant MacD 3 fries 50 burger 45 happymeal 200
+### To see menu of all available resturants
+`show-menu`
+### To search a food item in all resturants order by lowest price first
+`search <item_name>`
+>search burger
 ### To order from a resturant
 `order-food <resturant_name> <item1_from_menu> <no_of_items> <item2_from_menu> <no_of_items> ... <itemN_from_menu> <no_of_items>`
 > order-food KFC wings 4 crushers 2 burger 1
