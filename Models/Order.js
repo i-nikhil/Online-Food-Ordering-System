@@ -4,7 +4,7 @@ class Order {
     #bill
     constructor(name) {
         this.#resturantName = name
-        this.orders = new Map()
+        this.orders = new Map()//item, count
     }
     get resturantName() {
         return this.#resturantName

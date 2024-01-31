@@ -6,7 +6,7 @@ class ShowMenuCommandExecutor extends CommandExecutor {
     validate(command) {
         return !(command.length != 1 || command[0] != ShowMenuCommandExecutor.commandName);
     }
-    execute(command) {
+    execute() {
         for (const resturant of this.service.getAllResturants()) {
             console.log(`\n${resturant.name}'s Menu:`);
             for (let [item, price] of resturant.menu) {
