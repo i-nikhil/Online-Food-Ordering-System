@@ -21,6 +21,9 @@
 ### To search a food item in all resturants order by lowest price first
 `search <item_name>`
 >search burger
+### To search a food item in all resturants order by most ordered first
+`popular-search <item_name>`
+>popular-search burger
 ### To order from a resturant
 `order-food <resturant_name> <item1_from_menu> <no_of_items> <item2_from_menu> <no_of_items> ... <itemN_from_menu> <no_of_items>`
 > order-food KFC wings 4 crushers 2 burger 1
